@@ -8177,6 +8177,12 @@ html {
   src: url('../fonts/Gotham/Gotham-Book.eot?&1439448704#iefix') format('embedded-opentype'), url('../fonts/Gotham/Gotham-Book.woff?1439448706') format('woff'), url('../fonts/Gotham/Gotham-Book.ttf?1439448704') format('truetype'), url('../fonts/Gotham/Gotham-Book.svg?1439448706') format('svg');
   font-weight: 500;
 }
+
+ @font-face {
+    font-family:"Erato Light"";
+    src:url('res/Hoftype - Erato-Light.otf');
+    font-weight: 500;
+}
 @font-face {
   font-family: "Gotham";
   src: url('../fonts/Gotham/Gotham-Bold.eot?1439448724');
@@ -9207,10 +9213,10 @@ footer a:focus {
   display: inline-block;
   padding-bottom: 5px;
   border-bottom: solid 1px transparent;
-  font-family: "Gotham", sans-serif;
+  font-family: "Erato Light";
   font-size: 16px;
   font-weight: 500;
-  color: #ffd9d9;
+  color: #D4AF37;
   text-transform: uppercase;
   -moz-transition: border-bottom 0.25s ease-in-out;
   -o-transition: border-bottom 0.25s ease-in-out;
@@ -9228,8 +9234,8 @@ footer a:focus {
 .nav.navbar-nav li a:hover, .nav.navbar-nav li a.active,
 .nav.navbar-nav li a:visited:hover,
 .nav.navbar-nav li a:visited.active {
-  color: #ffd9d9 !important;
-  border-bottom: solid 1px #ffd9d9;
+  color: #fff !important;
+  border-bottom: solid 1px #fff;
 }
 /* line 53, ../sass/partials/_nav.scss */
 .nav.navbar-nav li a:active:hover,
