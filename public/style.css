@@ -8382,7 +8382,7 @@ section.intro {
 /* ------- Wedding Info ------ */
 /* line 140, ../sass/partials/_layout.scss */
 section.wedding-info {
-  background-color: #ffd9d9;
+  background-color: #fff;
   position: relative;
   z-index: 4;
   padding-top: 300px;
@@ -9240,13 +9240,13 @@ footer a:focus {
 /* line 53, ../sass/partials/_nav.scss */
 .nav.navbar-nav li a:active:hover,
 .nav.navbar-nav li a:visited:active:hover {
-  color: #ffd9d9 !important;
+  color: #fff !important;
 }
 /* line 59, ../sass/partials/_nav.scss */
 .nav.navbar-nav li.active > a,
 .nav.navbar-nav li.active > a:focus {
-  color: #ffd9d9;
-  border-bottom: solid 1px #ffd9d9;
+  color: #fff;
+  border-bottom: solid 1px #fff;
   background-color: transparent;
 }
 /* line 65, ../sass/partials/_nav.scss */
