@@ -8181,7 +8181,7 @@ html {
  @font-face {
     font-family:"Erato Light"";
     src:url('res/Hoftype - Erato-Light.otf');
-    font-weight: 500;
+    font-weight: 700;
 }
 @font-face {
   font-family: "Gotham";
@@ -9216,7 +9216,7 @@ footer a:focus {
   font-family: "Erato Light";
   font-size: 16px;
   font-weight: 500;
-  color: #D4AF37;
+  color: #fff;
   text-transform: uppercase;
   -moz-transition: border-bottom 0.25s ease-in-out;
   -o-transition: border-bottom 0.25s ease-in-out;
