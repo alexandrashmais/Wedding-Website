@@ -8192,7 +8192,7 @@ html {
 /* End @font-face */
 /* line 17, ../sass/partials/_typography.scss */
 h2 {
-  font-family: "Didot";
+  font-family: "Erato Light";
   font-size: 30px;
 }
 
@@ -8204,7 +8204,7 @@ h2 {
 
 /* line 27, ../sass/partials/_typography.scss */
 p {
-  font-family: "Gotham", sans-serif;
+  font-family: "Erato Light";
   font-size: 16px;
   color: #6c6d70;
   line-height: 1.8;
