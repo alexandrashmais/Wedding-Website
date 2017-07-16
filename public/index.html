@@ -119,47 +119,47 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         
         <script>
-57
-      document.addEventListener('DOMContentLoaded', function() {
-58
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-59
-        // // The Firebase SDK is initialized and available here!
-60
-        //
-61
-        // firebase.auth().onAuthStateChanged(user => { });
-62
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-63
-        // firebase.messaging().requestPermission().then(() => { });
-64
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-65
-        //
-66
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-67
 
-68
+      document.addEventListener('DOMContentLoaded', function() {
+
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        // // The Firebase SDK is initialized and available here!
+
+        //
+
+        // firebase.auth().onAuthStateChanged(user => { });
+
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+
+        // firebase.messaging().requestPermission().then(() => { });
+
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+
+        //
+
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+
+
         try {
-69
+
           let app = firebase.app();
-70
+
           let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-71
+
           console.log(`Firebase SDK loaded with ${features.join(', ')}`);
-72
+
         } catch (e) {
-73
+
           console.error(e);
-74
+
           console.log('Error loading the Firebase SDK, check the console.');
-75
+
         }
-76
+
       });
-77
+
     </script>
 
 </body>
