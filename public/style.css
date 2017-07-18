@@ -8196,6 +8196,7 @@ h2 {
   font-size: 30px;
 }
 
+
 /* line 22, ../sass/partials/_typography.scss */
 .month {
   text-transform: uppercase;
@@ -9140,7 +9141,6 @@ footer a:focus {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
-
 @-webkit-keyframes fadeOutLeft {
   0% {
     opacity: 1;
