@@ -1,292 +1,236 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/azblack.PNG?alt=media&token=a15d50b4-96cf-49b5-bcef-eb649f602802" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet"/>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ali & Zedd's Wedding</title>        
-  <link href="css/lib.css" rel="stylesheet" type="text/css" />
-  <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/4.1.3/firebase-auth.js"></script>
-  <script defer src="/__/firebase/4.1.3/firebase-database.js"></script>
-  <script defer src="/__/firebase/4.1.3/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/4.1.3/firebase-storage.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    // Add smooth scrolling to all links
-    $(document).ready(function(){
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-            window.location.hash = hash;
-          });
-        } 
-      });
-    });
-  </script>
-  <script defer src="/__/firebase/init.js"></script>
-
+    <link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/azblack.PNG?alt=media&token=a15d50b4-96cf-49b5-bcef-eb649f602802" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ali & Zedd's Wedding</title>
+    <link href="css/lib.css" rel="stylesheet" type="text/css" />
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.1.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.1.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
 </head>
 
-<body data-spy="scroll" data-target="#main-nav">
-	<header>
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-						<span class="sr-only">Toggle Navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button><!-- .navbar-toggle .collapsed -->
-				</div><!-- .navbar-header -->
-
-				<div class="collapse navbar-collapse" id="main-nav">
-					<ul class="nav navbar-nav">
-						<li><a href="#wedding">Our Wedding</a></li>
-						<li><a href="#party">Bridal Party</a></li>
-						<li><a href="#registry">Registry</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-          </ul><!-- .nav ,navbar-nav -->
-        </div><!-- .collapse .navbar-collapse #main-nav -->
-      </div><!-- .container -->
-    </nav><!-- .navbar .navbar-default .navbar-fixed-top -->
-  </header>
-
-  <div class="content-container2" align="middle">
-    <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2913.jpg?alt=media&token=8707bc8d-8c02-4ee3-b3b4-414572155e2e" width="100%" height="750px"/>
-    
-  </div>
-
-  <div class="content-container">
-    <section id="wedding" class="wedding">
-
-
-
-      <div class="inner-container">
-        <div class="wedding-info-title row">
-          <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/wedding-title.png?alt=media&token=6565ba26-bfd5-4817-a802-385da420d3ea" id="wedding-title" alt="Our Wedding" />
-          <p><h2><span class="month">January</span> 13<sup>th</sup> 2018</h2></p>
-        </div><!-- .wedding-info-title .row -->
-
-        <section id="ceremony" class="ceremony">
-          <div class="container">
-            <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Ceremony.png?alt=media&token=f3d6e0fe-2bee-4f45-a790-3421a1cb52ec" alt="Ceremony" width="40%" height="40%" align="left">
-            <div class="col-xs-6 ceremony" align="right">
-             <h2>Ceremony</h2>
-             <p>6:30 p.m.</p>
-             <p>Grace Chapel at White's Chapel UMC <br />185 S White Chapel Blvd <br />Southlake, TX <br />Attire: Formal<br /><a href="https://www.google.com/maps/place/185+S+White+Chapel+Blvd,+Southlake,+TX+76092/@32.9392216,-97.1522335,17z/data=!3m1!4b1!4m5!3m4!1s0x864dd442ffe57c43:0xfb3385d6c8868256!8m2!3d32.9392171!4d-97.1500395" target="_blank">View On Map</a></p>
-           </div><!-- .col-xs-6 .ceremony -->
-         </div><!-- container -->
-         <div class="container">
-
-         </div>
-       </section><!-- ceremony -->
-
-       <section id="reception" class="reception">
-        <div class="container">
-          <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Reception.png?alt=media&token=051cea0a-50ee-4953-967c-49e28a03f109" alt="Reception" width="40%" height="40%" align="left">
-          <div class="col-xs-6 ceremony" align="right">
-           <h2>Reception</h2>
-           <p>7:30 p.m.</p>
-           <p>Las Colinas Country Club <br />4400 N O'Connor Rd <br />Irving, TX<br /><a href="https://www.google.com/maps/place/Las+Colinas+Country+Club/@32.8616055,-96.9493139,17z/data=!3m1!4b1!4m5!3m4!1s0x864e82c3d6673a75:0x776fc233bba6188b!8m2!3d32.8616055!4d-96.9471252" target="_blank">View On Map</a></p>
-         </div><!-- .col-xs-6 .ceremony -->
-       </div><!-- .container -->
-     </section><!-- reception -->
-
-     <section id="hotels" class="reception">
-      <div class="py-5">
-        <div class="container">
-          <h2>Recommended Hotels</h2>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="hotel-container">
-               <a href="http://www.fourseasons.com/dallas/" target="_blank">
-                 <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/fourseasons.png?alt=media&token=d4610f93-87b0-4fb2-894e-1615001a7f71" alt="Four Seasons" class="hotel-image">
-               </a> 
-               <div class="hotel-overlay">
-                <span class="hotel-text" >Four Seasons Las Colinas <br />4150 N MacArthur Blvd <br /> Irving, TX 75038</span>
-              </div> 
+<body data-spy="scroll" data-target="#main-nav" ng-app="App" ng-controller="mainCtrl">
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- .navbar-toggle .collapsed -->
+                </div>
+                <!-- .navbar-header -->
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#wedding">Our Wedding</a></li>
+                        <li><a href="#party">Bridal Party</a></li>
+                        <li><a href="#registry">Registry</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#rsvp">RSVP</a></li>
+                    </ul>
+                    <!-- .nav ,navbar-nav -->
+                </div>
+                <!-- .collapse .navbar-collapse #main-nav -->
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="hotel-container">
-              <a href="https://www.omnihotels.com/hotels/dallas-mandalay" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/omni.PNG?alt=media&token=9ec85b0e-223a-4691-9943-2c0134d0687e" alt="Omni" class="hotel-image">
-              </a> 
-              <div class="hotel-overlay">
-                <span class="hotel-text">Omni Mandalay Las Colinas <br />221 E Las Colinas Blvd <br /> Irving, TX 75039</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="hotel-container">
-              <a href="https://www.holidayinn.com/hotels/us/en/irving/dfwiv/hoteldetail?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.sp.nd.ct&qChld=0&qFRA=1&qGRM=0&qIta=99504425&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&icdv=99504425&sicreative=169950953477&siclientid=9948&sitrackingid=948516400&dp=true&glat=SEAR" target="_blank">
-               <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/holidayinn.png?alt=media&token=c660642b-a029-4c51-bc8b-bd2a980541a0" alt="Four Seasons" class="hotel-image">
-             </a> 
-             <div class="hotel-overlay">
-             <span class="hotel-text">Holiday Inn Las Colinas <br />110 W John Carpenter Fwy <br />Irving, TX 75038</span>
-            </div> 
-          </div>
-        </div>
-      </div>
+            <!-- .container -->
+        </nav>
+        <!-- .navbar .navbar-default .navbar-fixed-top -->
+    </header>
+    <div class="content-container2" align="middle">
+        <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2913.jpg?alt=media&token=8707bc8d-8c02-4ee3-b3b4-414572155e2e" width="100%" height="750px" />
     </div>
-  </div>
-  <div class="container">
-    <div class="" align="center">
-     <p>
-      <ul class="">
-        <div class="">
-
+    <div class="content-container">
+        <section id="wedding" class="wedding">
+            <div class="inner-container">
+                <div class="wedding-info-title row">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/wedding-title.png?alt=media&token=6565ba26-bfd5-4817-a802-385da420d3ea" id="wedding-title" alt="Our Wedding" />
+                    <p>
+                        <h2><span class="month">January</span> 13<sup>th</sup> 2018</h2>
+                    </p>
+                </div>
+                <!-- .wedding-info-title .row -->
+                <section id="ceremony" class="ceremony">
+                    <div class="container">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Ceremony.png?alt=media&token=f3d6e0fe-2bee-4f45-a790-3421a1cb52ec" alt="Ceremony" width="40%" height="40%" align="left">
+                        <div class="col-xs-6 ceremony" align="right">
+                            <h2>Ceremony</h2>
+                            <p>6:30 p.m.</p>
+                            <p>Grace Chapel at White's Chapel UMC
+                                <br />185 S White Chapel Blvd
+                                <br />Southlake, TX
+                                <br />Attire: Formal
+                                <br /><a href="https://www.google.com/maps/place/185+S+White+Chapel+Blvd,+Southlake,+TX+76092/@32.9392216,-97.1522335,17z/data=!3m1!4b1!4m5!3m4!1s0x864dd442ffe57c43:0xfb3385d6c8868256!8m2!3d32.9392171!4d-97.1500395" target="_blank">View On Map</a></p>
+                        </div>
+                        <!-- .col-xs-6 .ceremony -->
+                    </div>
+                    <!-- container -->
+                    <div class="container">
+                    </div>
+                </section>
+                <!-- ceremony -->
+                <section id="reception" class="reception">
+                    <div class="container">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Reception.png?alt=media&token=051cea0a-50ee-4953-967c-49e28a03f109" alt="Reception" width="40%" height="40%" align="left">
+                        <div class="col-xs-6 ceremony" align="right">
+                            <h2>Reception</h2>
+                            <p>7:30 p.m.</p>
+                            <p>Las Colinas Country Club
+                                <br />4400 N O'Connor Rd
+                                <br />Irving, TX
+                                <br /><a href="https://www.google.com/maps/place/Las+Colinas+Country+Club/@32.8616055,-96.9493139,17z/data=!3m1!4b1!4m5!3m4!1s0x864e82c3d6673a75:0x776fc233bba6188b!8m2!3d32.8616055!4d-96.9471252" target="_blank">View On Map</a></p>
+                        </div>
+                        <!-- .col-xs-6 .ceremony -->
+                    </div>
+                    <!-- .container -->
+                </section>
+                <!-- reception -->
+                <!-- WE GOT THE HOTEL MOTEL HOLIDAY IN -->
+                <section id="hotels" class="reception">
+                    <div class="py-5">
+                        <div class="container">
+                            <h2>Recommended Hotels</h2>
+                            <div class="row">
+                                <div class="col-md-4" ng-repeat="hotel in hotels">
+                                    <div class="hotel-container">
+                                        <a ng-href="{{hotel.url}}" target="_blank"><img ng-src="{{hotel.image}}" alt="{{hotel.name}}" class="hotel-image">
+                                            <div class="hotel-overlay">
+                                                <span class="hotel-text">{{hotel.description}}</span>
+                                            </div>
+                                        </a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="" align="center">
+                            <p>
+                                <ul class="">
+                                    <div class="">
+                                    </div>
+                                    <div class="">
+                                    </div>
+                                    <div class="">
+                                    </div>
+                                </ul>
+                        </div>
+                        <!-- .col-xs-6 .ceremony -->
+                    </div>
+                    <!-- .container -->
+                </section>
+                <!-- reception -->
+        </section>
+        <!-- Our Wedding -->
+        <section id="party" class="party">
+            <div class="wedding-info-title row">
+                <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/party.png?alt=media&token=c57e064f-ab27-49f4-b58e-63614a2e46a0" id="party-title" alt="Bridal Party" />
+            </div>
+            <!-- .wedding-info-title .row -->
+            <div class="container">
+                <div class="col-xs-6 ceremony" align="left">
+                    <h2>Bridesmaids</h2>
+                    <p>Rosemary Brinegar, <i>Sister</i>
+                        <br />Camille Brinegar, <i>Sister</i>
+                        <br />Sawsan Shmais, <i>Future Sister-In-Law</i>
+                        <br />Crystal Sun, <i>Friend</i>
+                        <br />Meera Patel, <i>Friend</i></p>
+                </div>
+                <!-- .col-xs-6 .ceremony -->
+                <div class="col-xs-6 ceremony" align="right">
+                    <h2>Groomsmen</h2>
+                    <p>Noah Shmais, <i>Brother</i>
+                        <br />Steven Shmais, <i>Brother</i>
+                        <br />Chase Brinegar, <i>Future Brother-In-Law</i>
+                        <br />Danny Habash, <i>Cousin</i>
+                        <br />Kevin Chung, <i>Friend</i>
+                        <br />
+                    </p>
+                </div>
+                <!-- .col-xs-6 .ceremony -->
+            </div>
+            <!-- container -->
+        </section>
+        <!-- party  -->
+        <section id="registry" class="registry">
+            <div class="wedding-info-title row" align="center">
+                <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Registry.PNG?alt=media&token=8aad48d0-7a9d-4f14-917c-728523e1a631" id="registry-title" alt="Registry" />
+            </div>
+            <!-- .wedding-info-title .row -->
+            <div class="container">
+                <div class="col-xs-6 ceremony" align="center">
+                    <a href="https://www.williams-sonoma.com/registry/5w5t8wxlxp/registry-list.html" target="_blank"><img src="res/ws-logo.png" alt="Williams-Sonoma" width="auto" height="auto" margin="5px"></a>
+                </div>
+                <div class="col-xs-6 ceremony" align="center">
+                    <a href="https://www.amazon.com/wedding/share/AlexandraAndZedd" target="_blank"><img src="res/amazon_logo.png" alt="Amazon" width="auto" height="auto"></a>
+                </div>
+            </div>
+        </section>
+        <!-- registry  -->
+        <section id="gallery" class="instagram-feed">
+            <div class="wedding-info-title row">
+                <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Gallery.png?alt=media&token=6bffaaac-46cc-4fb7-a3fa-75de6aa61218" id="gallery-title" alt="Gallery" />
+            </div>
+            <!-- .wedding-info-title .row -->
+            <div class="container">
+                <div class="row">
+                    <!-- Tab Panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" id="pre-wed" class="tab-pane active fade in tab-content-each">
+                            <ul class="pre-wed-list">
+                                <li ng-repeat="url in images">
+                                    <a ng-href="{{url}}" data-lightbox="pre-wed"><img ng-src="{{url}}"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" id="i``nstafeed" class="tab-pane fade tab-content-each"></div>
+                    </div>
+                    <!-- .tab-content -->
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </section>
+        <!-- .instagram-feed -->
+        <section id="rsvp" class="rsvp">
+            <div class="wedding-info-title row">
+                <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/RSVP.png?alt=media&token=ffe32565-fd5a-4866-b16a-660d60e902ec" id="rsvp-title" alt="RSVP" />
+            </div>
+            <!-- .wedding-info-title .row -->
+        </section>
+        <!-- rsvp  -->
         </div>
-        <div class="">
+        <!-- .content-container -->
+        <footer>
+            <div class="container">
+                <img class="display center" src="res/az.png" style="width:15%; height:15%">
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/app.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <!-- <script src="js/instafeed.min.js"></script>-->
+        <script>
+        </script>
+</body>
 
-        </div>
-        <div class="">
-
-        </div>
-      </ul>
-
-    </div><!-- .col-xs-6 .ceremony -->
-  </div><!-- .container -->
-</section><!-- reception -->
-
-</section><!-- Our Wedding -->
-
-<section id="party" class="party">
-  <div class="wedding-info-title row">
-    <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/party.png?alt=media&token=c57e064f-ab27-49f4-b58e-63614a2e46a0" id="party-title" alt="Bridal Party" />
-  </div><!-- .wedding-info-title .row -->
-  <div class="container">
-    <div class="col-xs-6 ceremony" align="left">
-     <h2>Bridesmaids</h2>
-     <p>Rosemary Brinegar, <i>Sister</i> <br />Camille Brinegar, <i>Sister</i><br />Sawsan Shmais, <i>Future Sister-In-Law</i><br />Crystal Sun, <i>Friend</i><br />Meera Patel, <i>Friend</i></p>
-   </div><!-- .col-xs-6 .ceremony -->
-   <div class="col-xs-6 ceremony" align="right">
-     <h2>Groomsmen</h2>
-     <p>Noah Shmais, <i>Brother</i><br />Steven Shmais, <i>Brother</i> <br />Chase Brinegar, <i>Future Brother-In-Law</i><br />Danny Habash, <i>Cousin</i><br />Kevin Chung, <i>Friend</i><br /></p>
-   </div><!-- .col-xs-6 .ceremony -->
- </div><!-- container -->
-
-</section><!-- party  -->
-
-<section id="registry" class="registry">
-  <div class="wedding-info-title row" align="center">
-    <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Registry.PNG?alt=media&token=8aad48d0-7a9d-4f14-917c-728523e1a631" id="registry-title" alt="Registry"/>
-  </div><!-- .wedding-info-title .row -->
-  <div class="container">
-    <div class="col-xs-6 ceremony" align="center">
-      <a href="https://www.williams-sonoma.com/registry/5w5t8wxlxp/registry-list.html" target="_blank">
-       <img src="res/ws-logo.png" alt="Williams-Sonoma" width="auto" height="auto" margin="5px">
-     </a>
-   </div>
-   <div class="col-xs-6 ceremony" align="center">
-    <a href="https://www.amazon.com/wedding/share/AlexandraAndZedd" target="_blank">
-      <img src="res/amazon_logo.png" alt="Amazon" width="auto" height="auto">
-    </a>
-  </div>
-</div>
-</section><!-- registry  -->
-
-
-<section id="gallery" class="instagram-feed">
- <div class="wedding-info-title row">
-  <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Gallery.png?alt=media&token=6bffaaac-46cc-4fb7-a3fa-75de6aa61218" id="gallery-title" alt="Gallery"/>
-</div><!-- .wedding-info-title .row -->
-<div class="container">
- <div class="row">
-  <!-- Tab Panes -->
-  <div class="tab-content">
-   <div role="tabpanel" id="pre-wed" class="tab-pane active fade in tab-content-each">
-    <ul class="pre-wed-list">
-     <li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2860.jpg?alt=media&token=9fa92c6e-e52a-4aa5-b581-cbe375a9ab8d" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2860.jpg?alt=media&token=9fa92c6e-e52a-4aa5-b581-cbe375a9ab8d"  /></a></li>
-     <li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2997.jpg?alt=media&token=7bbdc3cb-6eb7-4517-8bde-8fffd14bdf2d" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2997.jpg?alt=media&token=7bbdc3cb-6eb7-4517-8bde-8fffd14bdf2d"  /></a></li>
-     <li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_6920.jpg?alt=media&token=c194e7a5-fa50-4251-85e4-8fa0d099c53a" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_6920.jpg?alt=media&token=c194e7a5-fa50-4251-85e4-8fa0d099c53a"  /></a></li>
-     <li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2913.jpg?alt=media&token=8707bc8d-8c02-4ee3-b3b4-414572155e2e" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2913.jpg?alt=media&token=8707bc8d-8c02-4ee3-b3b4-414572155e2e"  /></a></li>
-     <li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2951.jpg?alt=media&token=1b173969-5d41-4905-b502-bb1c936bd433" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2951.jpg?alt=media&token=1b173969-5d41-4905-b502-bb1c936bd433"  /></a></li>
-     <li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_7043.jpg?alt=media&token=04cda2be-9426-4e7a-9f18-542d50c9233f" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_7043.jpg?alt=media&token=04cda2be-9426-4e7a-9f18-542d50c9233f"  /></a></li>
-     <li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2777.jpg?alt=media&token=42cbc2cb-81a0-4549-b1a3-9157bf7609fb" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2777.jpg?alt=media&token=42cbc2cb-81a0-4549-b1a3-9157bf7609fb"  /></a></li>
-     <li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_6995.jpg?alt=media&token=e8fb0fbc-567f-47f8-a8f9-36aeb6fbfca9" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_6995.jpg?alt=media&token=e8fb0fbc-567f-47f8-a8f9-36aeb6fbfca9"  /></a></li>
-   </ul>
- </div>
- <div role="tabpanel" id="i``nstafeed" class="tab-pane fade tab-content-each"></div>
-</div><!-- .tab-content -->
-</div><!-- .row -->
-</div><!-- .container -->
-</section><!-- .instagram-feed -->
-
-<section id="rsvp" class="rsvp">
-  <div class="wedding-info-title row">
-    <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/RSVP.png?alt=media&token=ffe32565-fd5a-4866-b16a-660d60e902ec" id="rsvp-title" alt="RSVP" />
-  </div><!-- .wedding-info-title .row -->
-</section><!-- rsvp  -->
-
-</div><!-- .content-container -->
-
-
-<footer>
-  <div class="container">
-    <img class="display center" src="res/az.png" style="width:15%; height:15%">
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="js/lightbox.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/instafeed.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        // // The Firebase SDK is initialized and available here!
-
-        //
-
-        // firebase.auth().onAuthStateChanged(user => { });
-
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-
-        // firebase.messaging().requestPermission().then(() => { });
-
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-
-        //
-
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-
-
-        try {
-
-          let app = firebase.app();
-
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-
-          console.log(`Firebase SDK loaded with ${features.join(', ')}`);
-
-        } catch (e) {
-
-          console.error(e);
-
-          console.log('Error loading the Firebase SDK, check the console.');
-
-        }
-
-      });
-    </script>
-
-
-  </body>
-  </html>
+</html>
