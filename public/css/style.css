@@ -26,69 +26,121 @@ html, body {
 	align-self: flex-end;
 }
 .holder {
-    float:left;
-    width:32%;
-    margin:5px;
-    
+  float:left;
+  width:32%;
+  margin:5px;
 }
 .image2 {
-    float:left;
-    width:33.33%;
-    height:100%
-      opacity: 0;
-      animation-name: fadeIn;
-      animation-duration: 1s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
+  float:left;
+  width:33.33%;
+  height:100%
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-   li:nth-child(2) > .image2 {
-      animation-delay: 1s;
-    }
+li:nth-child(2) > .image2 {
+  animation-delay: 1s;
+}
 
 li:nth-child(3) > .image2 {
-      animation-delay: 2s;
-    }
+  animation-delay: 2s;
+}
 @keyframes fadeIn {
   from { opacity: 0;
-               }
+  }
   to { opacity: 1;
   }
-   }
-   
+}
+
 .img-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 ul.img-list li {
-    display: inline-block;
-    height: 100%;
-    margin: 0px;
-    position: relative;
-    width: 100%;
+  display: inline-block;
+  height: 100%;
+  margin: 0px;
+  position: relative;
+  width: 100%;
 }
 span.text-content {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    cursor: pointer;
-    display: table;
-    height: 410px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width:100%;
-    opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 410px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width:100%;
+  opacity: 0;
 }
 ul.img-list li:hover span.text-content {
-    opacity: 1;
+  opacity: 1;
 }
 span.text-content span {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
- h2::first-letter {
-    color: #000;
-    font-size: xx-large;
+h2::first-letter {
+  color: #000;
+  font-size: xx-large;
 }
+
+/*hover over hotel feature classes*/
+
+.hotel-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hotel-text {
+  color: white;
+  font-size: 20px;
+}
+
+.hotel-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.75);
+  
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.hotel-container {
+  position: relative;
+  width: 100%;
+}
+
+.hotel-container:hover .hotel-overlay {
+  opacity: 1;
+}
+
+.hotel-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*end hover over hotel feature classes*/
