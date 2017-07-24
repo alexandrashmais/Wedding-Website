@@ -6,8 +6,10 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ali & Zedd's Wedding</title>        
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="lightbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/lib.css" rel="stylesheet" type="text/css" />
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
    <!-- update the version number as needed -->
     <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -34,101 +36,6 @@
     });
     </script>
     <script defer src="/__/firebase/init.js"></script>
-       <style type="text/css">
-           
-		html, body {
-			margin: 0;
-			height: 100%;
-		}
-		.Aligner {
-			height: 100%;
-			margin: 0;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			text-align: center;
-		}
-
-		.Aligner-item {
-			max-width: 100%;
-		}
-
-		.Aligner-item--top {
-			align-self: flex-start;
-		}
-
-		.Aligner-item--bottom {
-			align-self: flex-end;
-		}
-        .holder {
-            float:left;
-            width:32%;
-            margin:5px;
-            
-        }
-        .image2 {
-            float:left;
-            width:33.33%;
-            height:100%
-              opacity: 0;
-              animation-name: fadeIn;
-              animation-duration: 1s;
-              animation-iteration-count: 1;
-              animation-fill-mode: forwards;
-        }
-           li:nth-child(2) > .image2 {
-              animation-delay: 1s;
-            }
-
-        li:nth-child(3) > .image2 {
-              animation-delay: 2s;
-            }
-        @keyframes fadeIn {
-          from { opacity: 0;
-                       }
-          to { opacity: 1;
-          }
-           }
-           
-        .img-list {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        ul.img-list li {
-            display: inline-block;
-            height: 100%;
-            margin: 0px;
-            position: relative;
-            width: 100%;
-        }
-        span.text-content {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            cursor: pointer;
-            display: table;
-            height: 410px;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width:100%;
-            opacity: 0;
-        }
-        ul.img-list li:hover span.text-content {
-            opacity: 1;
-        }
-        span.text-content span {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-        }
-         h2::first-letter {
-            color: #000;
-            font-size: xx-large;
-        }
-    </style>
       
 </head>
 
@@ -260,12 +167,12 @@
                      <div class="container">
                           <div class="col-xs-6 ceremony" align="center">
                               <a href="https://www.williams-sonoma.com/registry/5w5t8wxlxp/registry-list.html" target="_blank">
-                                 <img src="res/ws-logo.png" alt="Williams-Sonoma" width="300px" height="300px" margin="5px">
+                                 <img src="res/ws-logo.png" alt="Williams-Sonoma" width="auto" height="auto" margin="5px">
                               </a>
                          </div>
                           <div class="col-xs-6 ceremony" align="center">
                               <a href="https://www.amazon.com/wedding/share/AlexandraAndZedd" target="_blank">
-                                <img src="res/amazon_logo.png" alt="Amazon" width="300px" height="300px">
+                                <img src="res/amazon_logo.png" alt="Amazon" width="auto" height="auto">
                               </a>
                          </div>
                         </div>
@@ -309,10 +216,9 @@
 
 	<footer>
 		<div class="container">
-			 <img class="display center" src="res/az.png" style="width: 15%; height: 15%">
+			 <img class="display center" src="res/az.png" style="width:15%; height:15%">
 		</div>
 	</footer>
-
          <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="js/lightbox.min.js"></script>

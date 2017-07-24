@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+html, body {
+	margin: 0;
+	height: 100%;
+}
+.Aligner {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.Aligner-item {
+	max-width: 100%;
+}
+
+.Aligner-item--top {
+	align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+	align-self: flex-end;
+}
+.holder {
+    float:left;
+    width:32%;
+    margin:5px;
+    
+}
+.image2 {
+    float:left;
+    width:33.33%;
+    height:100%
+      opacity: 0;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+}
+   li:nth-child(2) > .image2 {
+      animation-delay: 1s;
+    }
+
+li:nth-child(3) > .image2 {
+      animation-delay: 2s;
+    }
+@keyframes fadeIn {
+  from { opacity: 0;
+               }
+  to { opacity: 1;
+  }
+   }
+   
+.img-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul.img-list li {
+    display: inline-block;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+    width: 100%;
+}
+span.text-content {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    height: 410px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width:100%;
+    opacity: 0;
+}
+ul.img-list li:hover span.text-content {
+    opacity: 1;
+}
+span.text-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+ h2::first-letter {
+    color: #000;
+    font-size: xx-large;
+}
