@@ -8246,6 +8246,15 @@ body {
   }
 }
 
+.content-container2 {
+}
+@media (max-width: 767px) {
+  /* line 23, ../sass/partials/_layout.scss */
+  .content-container {
+       margin-top: 50px;
+  }
+}
+
 /* line 31, ../sass/partials/_layout.scss */
 .inner-container {
   position: relative;
@@ -9385,6 +9394,42 @@ footer a:focus {
   font-size: 40px;
   font-weight: 400;
 }
+.gallery{
+		width:604px;
+		height:453px;
+		position:relative;
+	}
 
+	.gallery ul{
+		width:604px;
+		height:453px;
+		list-style:none outside none;
+		position:relative;
+		overflow:hidden;
+	}
+	.gallery li:first-child{
+		display:list-item;
+		position:absolute;
+	}
 
+	.gallery li{
+		position:absolute;
+		display:none;
+	}
+.gallery .prevButton{
+		height:72px;
+		width:68px;
+		position:absolute;
+		background:url('buttons.png') no-repeat;
+		top:50%;
+		margin-top:-36px;
+		cursor:pointer;
+		z-index:2000;
+		background-position:left top;
+		left:0
+	}
+
+	.gallery .prevButton:hover{ 
+			background-position:left bottom;left:0;}
+	  
 

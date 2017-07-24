@@ -2,13 +2,12 @@
 <html>
 <head>
     <link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/azblack.PNG?alt=media&token=a15d50b4-96cf-49b5-bcef-eb649f602802" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet"/>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ali & Zedd's Wedding</title>        
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-// Add the new slick-theme.css if you want the default styling
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="lightbox.css" rel="stylesheet" type="text/css" />
    <!-- update the version number as needed -->
     <script defer src="/__/firebase/4.1.3/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -64,10 +63,34 @@
 		}
         .holder {
             float:left;
-            width:29%;
+            width:32%;
             margin:5px;
             
         }
+        .image2 {
+            float:left;
+            width:33.33%;
+            height:100%
+              opacity: 0;
+              animation-name: fadeIn;
+              animation-duration: 1s;
+              animation-iteration-count: 1;
+              animation-fill-mode: forwards;
+        }
+           li:nth-child(2) > .image2 {
+              animation-delay: 1s;
+            }
+
+        li:nth-child(3) > .image2 {
+              animation-delay: 2s;
+            }
+        @keyframes fadeIn {
+          from { opacity: 0;
+                       }
+          to { opacity: 1;
+          }
+           }
+           
         .img-list {
             list-style-type: none;
             margin: 0;
@@ -106,6 +129,7 @@
             font-size: xx-large;
         }
     </style>
+      
 </head>
 
 <body data-spy="scroll" data-target="#main-nav">
@@ -134,12 +158,10 @@
 		</nav><!-- .navbar .navbar-default .navbar-fixed-top -->
 	</header>
 
-     <div class="Aligner">
-                <div class="Aligner-item">
-                    <img src="res/logo.png" alt="Logo" width="80%" height="80%" align="middle">
-                </div>
-                   </div>
+   <div class="content-container2" align="middle">
+    <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2913.jpg?alt=media&token=8707bc8d-8c02-4ee3-b3b4-414572155e2e" width="100%" height="750px"/>
     
+    </div>
     
 	<div class="content-container">
 		<section id="wedding" class="wedding">
@@ -228,6 +250,7 @@
                             <p>Noah Shmais, <i>Brother</i><br />Steven Shmais, <i>Brother</i> <br />Chase Brinegar, <i>Future Brother-In-Law</i><br />Danny Habash, <i>Cousin</i><br />Kevin Chung, <i>Friend</i><br /></p>
 						</div><!-- .col-xs-6 .ceremony -->
 				</div><!-- container -->
+              
 			</section><!-- party  -->
             
             <section id="registry" class="registry">
@@ -248,11 +271,32 @@
                         </div>
 			</section><!-- registry  -->
 
-			<section id="gallery" class="gallery">
-                <div class="wedding-info-title row">
+        
+        	<section id="gallery" class="instagram-feed">
+                 <div class="wedding-info-title row">
 						<img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Gallery.png?alt=media&token=6bffaaac-46cc-4fb7-a3fa-75de6aa61218" id="gallery-title" alt="Gallery"/>
 					</div><!-- .wedding-info-title .row -->
-			</section><!-- gallery  -->
+				<div class="container">
+					<div class="row">
+						<!-- Tab Panes -->
+						<div class="tab-content">
+							<div role="tabpanel" id="pre-wed" class="tab-pane active fade in tab-content-each">
+								<ul class="pre-wed-list">
+									<li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2860.jpg?alt=media&token=9fa92c6e-e52a-4aa5-b581-cbe375a9ab8d" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2860.jpg?alt=media&token=9fa92c6e-e52a-4aa5-b581-cbe375a9ab8d"  /></a></li>
+									<li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2997.jpg?alt=media&token=7bbdc3cb-6eb7-4517-8bde-8fffd14bdf2d" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2997.jpg?alt=media&token=7bbdc3cb-6eb7-4517-8bde-8fffd14bdf2d"  /></a></li>
+									<li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_6920.jpg?alt=media&token=c194e7a5-fa50-4251-85e4-8fa0d099c53a" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_6920.jpg?alt=media&token=c194e7a5-fa50-4251-85e4-8fa0d099c53a"  /></a></li>
+									<li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2913.jpg?alt=media&token=8707bc8d-8c02-4ee3-b3b4-414572155e2e" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2913.jpg?alt=media&token=8707bc8d-8c02-4ee3-b3b4-414572155e2e"  /></a></li>
+									<li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2951.jpg?alt=media&token=1b173969-5d41-4905-b502-bb1c936bd433" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2951.jpg?alt=media&token=1b173969-5d41-4905-b502-bb1c936bd433"  /></a></li>
+									<li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_7043.jpg?alt=media&token=04cda2be-9426-4e7a-9f18-542d50c9233f" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_7043.jpg?alt=media&token=04cda2be-9426-4e7a-9f18-542d50c9233f"  /></a></li>
+									<li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2777.jpg?alt=media&token=42cbc2cb-81a0-4549-b1a3-9157bf7609fb" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_2777.jpg?alt=media&token=42cbc2cb-81a0-4549-b1a3-9157bf7609fb"  /></a></li>
+									<li><a href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_6995.jpg?alt=media&token=e8fb0fbc-567f-47f8-a8f9-36aeb6fbfca9" data-lightbox="pre-wed"><img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/IMG_6995.jpg?alt=media&token=e8fb0fbc-567f-47f8-a8f9-36aeb6fbfca9"  /></a></li>
+								</ul>
+							</div>
+							<div role="tabpanel" id="i``nstafeed" class="tab-pane fade tab-content-each"></div>
+						</div><!-- .tab-content -->
+					</div><!-- .row -->
+				</div><!-- .container -->
+			</section><!-- .instagram-feed -->
             
             <section id="rsvp" class="rsvp">
                 <div class="wedding-info-title row">
@@ -269,11 +313,12 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        
-        <script>
-
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/main.js"></script>
+    <script src="js/instafeed.min.js"></script>
+<script>
       document.addEventListener('DOMContentLoaded', function() {
 
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
@@ -313,10 +358,8 @@
         }
 
       });
-
     </script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	  
 </body>
 </html>
