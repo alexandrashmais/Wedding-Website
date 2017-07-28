@@ -42,13 +42,15 @@ app.controller('mainCtrl', function($scope) {
         "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F1.jpg?alt=media&token=a229fe02-66e7-4dcd-8eac-c179267f4e5b",
         "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F2.jpg?alt=media&token=35b00683-b546-43b3-aebd-cb3a4be1a74e",
         "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F3.jpg?alt=media&token=094192af-15cb-4413-a802-83eb35136387",
-        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F4.jpg?alt=media&token=22138c21-372f-43d3-b55b-df4297ae1ff7",
-        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F5.jpg?alt=media&token=21b31cfc-2f10-4676-b286-14ee776b2903",
-        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F6.jpg?alt=media&token=87927f23-3a4f-4962-a489-a3c802134f00",
-        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F7.jpg?alt=media&token=bb74fca0-088c-4a88-9b9a-bb782073d88e",
-        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F8.jpg?alt=media&token=70c53425-c0df-4284-88b4-a402f4888028",
+        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F5.jpg?alt=media&token=5cd8e217-1812-4958-b882-a3149d8cc1fd",
+        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F12.jpg?alt=media&token=c1c0a4d7-bd8d-40a8-8a67-576b1a049e32",
         "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F9.jpg?alt=media&token=bf657f79-305f-4f1a-860b-efddc03eea6d",
-        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F10.jpg?alt=media&token=08e08b38-1941-46b8-9bdc-b45e59d5abfd"
+        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F4.jpg?alt=media&token=22138c21-372f-43d3-b55b-df4297ae1ff7",
+        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F7.jpg?alt=media&token=bb74fca0-088c-4a88-9b9a-bb782073d88e",
+        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F6.jpg?alt=media&token=87927f23-3a4f-4962-a489-a3c802134f00",
+        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F11.jpg?alt=media&token=274179b3-e966-40df-a416-d990155d8c11",
+        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F13.jpg?alt=media&token=47095a88-799c-4ee2-83a0-496249bb6ddd",
+        "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F8.JPG?alt=media&token=99298f93-edfa-4694-97a8-87026a4a4bf2"
     ];
 
 });

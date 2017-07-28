@@ -144,3 +144,29 @@ h2::first-letter {
   height: auto;
 }
 /*end hover over hotel feature classes*/
+
+/* Text for cover photo */
+.content-wrapper{
+  width: 100%;
+}
+
+.content-wrapper img{
+    width:100%;
+}
+
+.text-wrapper{
+    width:100%;
+    position: relative;
+    margin-top: 40%;
+}
+
+.text-wrapper h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 10vw;
+}
+
+
+
+
+/* Text for cover photo */
