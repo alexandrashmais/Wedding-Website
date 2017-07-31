@@ -145,28 +145,27 @@ h2::first-letter {
 }
 /*end hover over hotel feature classes*/
 
-/* Text for cover photo */
-.content-wrapper{
-  width: 100%;
-}
-
-.content-wrapper img{
-    width:100%;
-}
-
-.text-wrapper{
-    width:100%;
-    position: relative;
-    margin-top: 40%;
-}
-
-.text-wrapper h1{
-    text-align: center;
-    color: #ffffff;
-    font-size: 10vw;
-}
-
-
 
 
 /* Text for cover photo */
+
+.coverphoto { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+.textimage { 
+   position: absolute;
+   top: 60%; 
+   left: 15%; 
+   color: white;
+   text-align:left;
+   font-family: "Steelworks";
+   font-size: 25px;
+}
+
+
+@font-face {
+    font-family:"Steelworks";
+    src:url('res/Steelworks Vintage Demo.otf');
+    font-weight: 700;
+}
