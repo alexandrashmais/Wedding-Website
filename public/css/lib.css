@@ -10,7 +10,9 @@ html {
 /* line 19, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_normalize.scss */
 body {
   margin: 0;
+
 }
+
 
 /* line 33, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_normalize.scss */
 article,
@@ -8180,22 +8182,31 @@ html {
 }
 
  @font-face {
-    font-family:"Erato Light"";
-    src:url('res/Hoftype - Erato-Light.otf');
+    font-family:"Erato Light";
+    src:url('../res/Hoftype - Erato-Light.otf');
     font-weight: 700;
 }
 
-@font-face {
-    font-family: 'Steelworks';
-    src:url('res/Steelworks Vintage Demo.otf');
-    font-weight: 700;
-}
 @font-face {
   font-family: "Gotham";
   src: url('../fonts/Gotham/Gotham-Bold.eot?1439448724');
   src: url('../fonts/Gotham/Gotham-Bold.eot?&1439448724#iefix') format('embedded-opentype'), url('../fonts/Gotham/Gotham-Bold.woff?1439448724') format('woff'), url('../fonts/Gotham/Gotham-Bold.ttf?1439448724') format('truetype'), url('../fonts/Gotham/Gotham-Bold.svg?1439448724') format('svg');
   font-weight: 700;
 }
+
+ @font-face {
+    font-family: "Steelworks";
+    src:url('../res/Steelworks.otf');
+    font-weight: 700;
+}
+
+ @font-face {
+    font-family: "Playfair";
+    src:url('../res/PlayfairDisplay-Regular.otf');
+    font-weight: 700;
+}
+
+
 /* End @font-face */
 /* line 17, ../sass/partials/_typography.scss */
 h2 {

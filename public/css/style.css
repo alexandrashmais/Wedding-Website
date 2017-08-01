@@ -163,8 +163,37 @@ h2::first-letter {
 }
 .textimage { 
    position: absolute;
-   top: 55%; 
+   top: 50%; 
    right: 2%;
    width: 50%;
+    font-family: "Steelworks";
+    color: white;
+    font-size: 80px;
+    text-align: center;
+     white-space: nowrap;
+    
 }
 
+.textimage::first-line {
+  color: white;
+  font-size: 200%;
+}
+
+.title-row{
+    font-family: "Playfair";
+    font-size: 80px;
+    color: black;
+}
+.party{
+    height:100vh;
+    width:100vw;
+}
+.registry{
+    height:100vh;
+    width:100vw;
+    
+}
+.rsvp{
+    height:100vh;
+    width:100vw;
+}
