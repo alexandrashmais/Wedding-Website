@@ -183,17 +183,5 @@ h2::first-letter {
     font-family: "Playfair";
     font-size: 80px;
     color: black;
-}
-.party{
-    height:100vh;
-    width:100vw;
-}
-.registry{
-    height:100vh;
-    width:100vw;
-    
-}
-.rsvp{
-    height:100vh;
-    width:100vw;
+    text-align: center;
 }
