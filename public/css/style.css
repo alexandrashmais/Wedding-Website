@@ -150,22 +150,21 @@ h2::first-letter {
 /* Text for cover photo */
 
 .coverphoto { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
+   /* The image used */
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F15.jpg?alt=media&token=1455cbfd-2b5d-4f1c-8329-f0e3549b2af2");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .textimage { 
    position: absolute;
-   top: 60%; 
-   left: 15%; 
-   color: white;
-   text-align:left;
-   font-family: "Steelworks";
-   font-size: 25px;
+   top: 55%; 
+   right: 2%;
+   width: 50%;
 }
 
-
-@font-face {
-    font-family:"Steelworks";
-    src:url('res/Steelworks Vintage Demo.otf');
-    font-weight: 700;
-}
