@@ -9240,9 +9240,8 @@ footer a:focus {
   display: inline-block;
   padding-bottom: 5px;
   border-bottom: solid 1px transparent;
-  font-family: "Erato Light";
-  font-size: 16px;
-  font-weight: 500;
+  font-family: "Erato Light", sans-serif;
+  font-size: 18px;
   color: #fff;
   text-transform: uppercase;
   -moz-transition: border-bottom 0.25s ease-in-out;

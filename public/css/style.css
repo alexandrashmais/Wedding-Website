@@ -168,11 +168,18 @@ h2::first-letter {
    width: 50%;
     font-family: "Steelworks";
     color: white;
-    font-size: 80px;
+    font-size: 90px;
     text-align: center;
      white-space: nowrap;
     
 }
+
+.registry { height: 100vh;}
+.party { height: 100vh; }
+.details { height: 100vh; }
+.gallery { height: 100vh; }
+
+
 
 .textimage::first-line {
   color: white;
