@@ -22,7 +22,7 @@ app.controller('mainCtrl', function($scope) {
             name: "Four Seasons",
             image: "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/fourseasons.png?alt=media&token=d4610f93-87b0-4fb2-894e-1615001a7f71",
             url: "http://www.fourseasons.com/dallas/",
-            description: "Four Seasons Las Colinas \n 4150 N MacArthur Blvd \n Irving, TX 75038"
+            description: "Four Seasons Las Colinas 4150 N MacArthur Blvd \n Irving, TX 75038"
         },
         {
             name: "Omni",

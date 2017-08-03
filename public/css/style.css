@@ -186,9 +186,21 @@ h2::first-letter {
   font-size: 200%;
 }
 
-.title-row{
+.title-row {
     font-family: "Playfair";
     font-size: 80px;
     color: black;
     text-align: center;
+    padding-top:45px;
+}
+
+
+#ceremony.ceremony {
+    padding-top: 10px;  
+    padding-bottom: 10px;
+}
+
+.wedding-date {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
