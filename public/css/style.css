@@ -203,11 +203,11 @@ h2::first-letter {
 
 
 
-/*
-.party { height: 60vh; }
-.registry { height: 60vh;}
-.details { height: 50vh; }
-.gallery { height: 100vh; }*/
+
+.party { height: 100vh; }
+.registry { height: 100vh;}
+.details { height: 100vh; }
+.gallery { height: 100vh; }
 
 .textimage::first-line {
     color: white;
