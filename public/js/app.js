@@ -22,19 +22,22 @@ app.controller('mainCtrl', function($scope) {
             name: "Four Seasons",
             image: "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/fourseasons.png?alt=media&token=d4610f93-87b0-4fb2-894e-1615001a7f71",
             url: "http://www.fourseasons.com/dallas/",
-            description: "Four Seasons Las Colinas 4150 N MacArthur Blvd \n Irving, TX 75038"
+            title: "Four Seasons Las Colinas",
+            description: "4150 N MacArthur Blvd \n Irving, TX 75038"
         },
         {
             name: "Omni",
             image: "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/omni.PNG?alt=media&token=9ec85b0e-223a-4691-9943-2c0134d0687e",
             url: "https://www.omnihotels.com/hotels/dallas-mandalay",
-            description: "Omni Mandalay Las Colinas \n 221 E Las Colinas Blvd \n Irving, TX 75039"
+            title: "Omni Mandalay Las Colinas",
+            description: "221 E Las Colinas Blvd \n Irving, TX 75039"
         },
         {
             name: "Holiday Inn",
             image: "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/holidayinn.png?alt=media&token=c660642b-a029-4c51-bc8b-bd2a980541a0",
             url: "https://www.holidayinn.com/hotels/us/en/irving/dfwiv/hoteldetail?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.sp.nd.ct&qChld=0&qFRA=1&qGRM=0&qIta=99504425&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&icdv=99504425&sicreative=169950953477&siclientid=9948&sitrackingid=948516400&dp=true&glat=SEAR",
-            description: "Holiday Inn Las Colinas \n 110 W John Carpenter Fwy \n Irving, TX 75038"
+            title: "Holiday Inn Las Colinas",
+            description: "110 W John Carpenter Fwy \n Irving, TX 75038"
         }
     ];
 
@@ -89,5 +92,12 @@ app.controller('mainCtrl', function($scope) {
         }
     ];
     
+
+
+var text =`
+Designed with Love by:
+Ali and Zedd
+`;
+console.log(text);
 
 });

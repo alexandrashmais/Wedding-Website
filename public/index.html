@@ -5,7 +5,7 @@
     <link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/azblack.PNG?alt=media&token=a15d50b4-96cf-49b5-bcef-eb649f602802" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet" />
     <meta charset="utf-8">
-    <meta name="viewport" content="width=de vice-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ali & Zedd's Wedding</title>
     <link href="css/lib.css" rel="stylesheet" type="text/css" />
     <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
@@ -22,15 +22,20 @@
     <script defer src="/__/firebase/init.js"></script>
     <!-- Analytics -->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-103778856-1', 'auto');
-      ga('send', 'pageview');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-103778856-1', 'auto');
+    ga('send', 'pageview');
     </script>
-    
-
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" ng-app="App" ng-controller="mainCtrl">
@@ -63,175 +68,148 @@
         </nav>
         <!-- .navbar .navbar-default .navbar-fixed-top -->
     </header>
-    
-    <div class="coverphoto">
-        <div class="textimage">Ali & Zedd <br /> January 13, 2018</div>
-    </div> 
-    
-    <div class="content-container">
-        <section id="wedding" class="wedding">
-            <div class="inner-container" align="middle">
-                <div class="title-row">
-                   OUR WEDDING
-                      
-                </div>
-                <!-- .wedding-info-title .row -->
-                <div class="container">
-                <section id="ceremony" class="ceremony">
-                    <div class="container">
-                        <div class="col-xs-6 ceremony" alight="left">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Ceremony.png?alt=media&token=f3d6e0fe-2bee-4f45-a790-3421a1cb52ec" alt="Ceremony" width="80%" height="80%" align="left">
-                        </div>
-                        <div class="col-xs-6 ceremony" align="right">
-                            <h2>Ceremony</h2>
-                            <p>January 13, 2018 at 5:30 p.m.</p>
-                            <p>Grace Chapel at White's Chapel UMC
-                                <br />185 S. White Chapel Blvd
-                                <br />Southlake, TX
-                                <br /><a href="https://www.google.com/maps/place/185+S+White+Chapel+Blvd,+Southlake,+TX+76092/@32.9392216,-97.1522335,17z/data=!3m1!4b1!4m5!3m4!1s0x864dd442ffe57c43:0xfb3385d6c8868256!8m2!3d32.9392171!4d-97.1500395" target="_blank">View Directions</a>
-                                 <br />   <a ng-href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/chapel_map.jpg?alt=media&token=864e99f3-5628-470d-817e-10fcac5cd4cf" data-lightbox="map">Map of Church</a>
-                            </p>
-                        </div>
-                        <!-- .col-xs-6 .ceremony -->
-                    </div>
-                    <!-- container -->
-                    <div class="container">
-                    </div>
-                </section>
-                <!-- ceremony -->
-                <section id="reception" class="reception">
-                    <div class="container">
-                        <div class="col-xs-6 ceremony" align="left">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Reception.png?alt=media&token=051cea0a-50ee-4953-967c-49e28a03f109" alt="Reception" width="80%" height="80%" align="left">
-                        </div>
-                        <div class="col-xs-6 ceremony" align="right">
-                            <h2>Reception</h2>
-                            <p>January 13, 2018 at 7:00 p.m.</p>
-                            <p>Las Colinas Country Club
-                                <br />4400 N O'Connor Rd
-                                <br />Irving, TX
-                                <br /><a href="https://www.google.com/maps/place/Las+Colinas+Country+Club/@32.8616055,-96.9493139,17z/data=!3m1!4b1!4m5!3m4!1s0x864e82c3d6673a75:0x776fc233bba6188b!8m2!3d32.8616055!4d-96.9471252" target="_blank">View Directions</a></p>
-                        </div>
-                        <!-- .col-xs-6 .ceremony -->
-                    </div>
-                    <!-- .container -->
-                </section>
-                </div>
-                <!-- reception -->
-                <!-- WE GOT THE HOTEL MOTEL HOLIDAY IN -->
-                <section id="hotels" class="reception">
-                    <div class="py-5">
-                        <div class="container">
-                            <h2>Recommended Hotels</h2>
-                            <div class="row">
-                                <div class="col-md-4" ng-repeat="hotel in hotels">
-                                    <div class="hotel-container">
-                                        <a ng-href="{{hotel.url}}" target="_blank"><img ng-src="{{hotel.image}}" alt="{{hotel.name}}" class="hotel-image">
-                                            <div class="hotel-overlay">
-                                                <span class="hotel-text">{{hotel.description}}</span>
-                                            </div>
-                                        </a>
-                                        <br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="" align="center">
-                            <p>
-                                <ul class="">
-                                    <div class="">
-                                    </div>
-                                    <div class="">
-                                    </div>
-                                    <div class="">
-                                    </div>
-                                </ul>
-                        </div>
-                        <!-- .col-xs-6 .ceremony -->
-                    </div>
-                    <!-- .container -->
-                </section>
-                   </div>
-                <!-- reception -->
-                </section>
-         
-        <!-- Our Wedding -->
-        <section id="party" class="party">
-            <div class="title-row" align="center">
-              <br/>BRIDAL PARTY
-            </div>
+    <div class="coverphoto d-flex align-items-center text-left h-75 bg-opaque mask mask-faded-out text-white">
+        <div class="textimage">
+            Ali & Zedd
+            <br/>January 13, 2018</div>
+    </div>
+    <section id="wedding" class="wedding">
+        <div class="title-row">
+            OUR WEDDING
+        </div>
+        <br>
+        <div class="container">
             <!-- .wedding-info-title .row -->
-            <br/>
-            <div class="container">
-                <div class="col-xs-6 ceremony" align="left">
-                    <h2>Bridesmaids</h2>
-                    <p>Rosemary Brinegar, <i>Sister</i>
-                        <br />Camille Brinegar, <i>Sister</i>
-                        <br />Sawsan Shmais, <i>Future Sister-In-Law</i>
-                        <br />Crystal Sun, <i>Friend</i>
-                        <br />Meera Patel, <i>Friend</i></p>
+            <div class="row">
+                <div class="col-xs-6" align="left">
+                    <img class="responsive image-shadow" src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Ceremony.png?alt=media&token=f3d6e0fe-2bee-4f45-a790-3421a1cb52ec" alt="Ceremony" width="90%" height="auto">
                 </div>
-                <!-- .col-xs-6 .ceremony -->
                 <div class="col-xs-6 ceremony" align="right">
-                    <h2>Groomsmen</h2>
-                    <p>Noah Shmais, <i>Brother</i>
-                        <br />Steven Shmais, <i>Brother</i>
-                        <br />Chase Brinegar, <i>Future Brother-In-Law</i>
-                        <br />Danny Habash, <i>Cousin</i>
-                        <br />Kevin Chung, <i>Friend</i>
-                        <br />
+                    <h2>Ceremony</h2>
+                    <p>January 13, 2018 at 5:30 p.m.</p>
+                    <p>Grace Chapel at White's Chapel UMC
+                        <br />185 S. White Chapel Blvd
+                        <br />Southlake, TX
+                        <br /><a href="https://www.google.com/maps/place/185+S+White+Chapel+Blvd,+Southlake,+TX+76092/@32.9392216,-97.1522335,17z/data=!3m1!4b1!4m5!3m4!1s0x864dd442ffe57c43:0xfb3385d6c8868256!8m2!3d32.9392171!4d-97.1500395" target="_blank">View Directions</a>
+                        <br /> <a ng-href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/chapel_map.jpg?alt=media&token=864e99f3-5628-470d-817e-10fcac5cd4cf" data-lightbox="map">Map of Church</a>
                     </p>
                 </div>
                 <!-- .col-xs-6 .ceremony -->
             </div>
-            <!-- container -->
-        </section>
-        <!-- party  -->
-        <section id="registry" class="registry">
-            <div class="title-row" align="center">
-                <br/>REGISTRY
-            </div>
-            <!-- .wedding-info-title .row -->
-            <div class="container">
-                <br /><br /><br /><br /><br />
-                <div class="col-xs-6 ceremony" align="center">
-                    <a href="https://www.williams-sonoma.com/registry/5w5t8wxlxp/registry-list.html" target="_blank"><img src="res/ws-logo.png" alt="Williams-Sonoma" width="auto" height="auto" margin="5px"></a>
+            <!-- ceremony -->
+            <div class="row" style="margin-top: 2%">
+                <div class="col-xs-6" align="left">
+                    <img class="responsive image-shadow" src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/Reception.png?alt=media&token=051cea0a-50ee-4953-967c-49e28a03f109" alt="Reception" width="90%" height="auto">
                 </div>
-                <div class="col-xs-6 ceremony" align="center">
-                    <a href="https://www.amazon.com/wedding/share/AlexandraAndZedd" target="_blank"><img src="res/amazon_logo.png" alt="Amazon" width="auto" height="auto"></a>
+                <div class="col-xs-6 ceremony" align="right">
+                    <h2>Reception</h2>
+                    <p>January 13, 2018 at 7:00 p.m.</p>
+                    <p>Las Colinas Country Club
+                        <br />4400 N O'Connor Rd
+                        <br />Irving, TX
+                        <br /><a href="https://www.google.com/maps/place/Las+Colinas+Country+Club/@32.8616055,-96.9493139,17z/data=!3m1!4b1!4m5!3m4!1s0x864e82c3d6673a75:0x776fc233bba6188b!8m2!3d32.8616055!4d-96.9471252" target="_blank">View Directions</a></p>
                 </div>
-            </div>
-        </section>
-        <!-- registry  -->
-        <section id="gallery" class="instagram-feed">
-            <div class="title-row" align="middle">
-                GALLERY<br />
-            </div>
-            <!-- .wedding-info-title .row -->
-            <div class="container">
-                <div class="row">
-                    <!-- Tab Panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" id="pre-wed" class="tab-pane active fade in tab-content-each">
-                            <ul class="pre-wed-list">
-                                <li ng-repeat="image in images">
-                                    <a ng-href="{{image.url}}" data-lightbox="pre-wed"><img ng-src="{{image.image}}"/></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div role="tabpanel" id="instafeed" class="tab-pane fade tab-content-each"></div>
-                    </div>
-                    <!-- .tab-content -->
-                </div>
-                <!-- .row -->
+                <!-- .col-xs-6 .ceremony -->
             </div>
             <!-- .container -->
-        </section>
-        <!-- .instagram-feed -->
-        
-        <!-- hiding RSVP section for now
+            <!-- reception -->
+            <!-- WE GOT THE HOTEL MOTEL HOLIDAY INN -->
+            <br>
+            <div id="hotels" class="reception container">
+                        <h2>Recommended Hotels</h2>
+                        <div class="row">
+                            <div class="col-md-4" ng-repeat="hotel in hotels">
+                                <div class="hotel-container">
+                                    <a ng-href="{{hotel.url}}" target="_blank"> 
+                                        <img class="responsive image-shadow" ng-src="{{hotel.image}}" alt="{{hotel.name}}" class="hotel-image">
+                                        <div class="hotel-overlay">
+                                            <div><p class="hotel-title">{{hotel.title}}</p><p class="hotel-text">{{hotel.description}}</p></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                <!-- .container -->
+            </div>
+        </div>
+        <!-- reception -->
+    </section>
+    <!-- Our Wedding -->
+    <section id="party" class="party">
+        <div class="title-row" align="center">
+            <br/>BRIDAL PARTY
+        </div>
+        <!-- .wedding-info-title .row -->
+        <br/>
+        <div class="container">
+            <div class="col-xs-6 ceremony" align="left">
+                <h2>Bridesmaids</h2>
+                <p>Rosemary Brinegar, <i>Sister</i>
+                    <br />Camille Brinegar, <i>Sister</i>
+                    <br />Sawsan Shmais, <i>Future Sister-In-Law</i>
+                    <br />Crystal Sun, <i>Friend</i>
+                    <br />Meera Patel, <i>Friend</i></p>
+            </div>
+            <!-- .col-xs-6 .ceremony -->
+            <div class="col-xs-6 ceremony" align="right">
+                <h2>Groomsmen</h2>
+                <p>Noah Shmais, <i>Brother</i>
+                    <br />Steven Shmais, <i>Brother</i>
+                    <br />Chase Brinegar, <i>Future Brother-In-Law</i>
+                    <br />Danny Habash, <i>Cousin</i>
+                    <br />Kevin Chung, <i>Friend</i>
+                    <br />
+                </p>
+            </div>
+            <!-- .col-xs-6 .ceremony -->
+        </div>
+        <!-- container -->
+    </section>
+    <!-- party  -->
+    <section id="registry" class="registry">
+        <div class="title-row" align="center">
+            <br/>REGISTRY
+        </div>
+        <!-- .wedding-info-title .row -->
+        <div class="container">
+            <div class="row" style="margin-top: 10%">
+                <div class="col-xs-6 " align="center">
+                    <a href="https://www.williams-sonoma.com/registry/5w5t8wxlxp/registry-list.html" target="_blank"><img class="responsive" src="res/ws-logo.png" alt="Williams-Sonoma" width="auto" height="auto" margin="5px"></a>
+                </div>
+                <div class="col-xs-6 " align="center">
+                    <a href="https://www.amazon.com/wedding/share/AlexandraAndZedd" target="_blank"><img class="responsive" src="res/amazon_logo.png" alt="Amazon" width="auto" height="auto"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- registry  -->
+    <section id="gallery" class="instagram-feed">
+        <div class="title-row" align="middle">
+            GALLERY
+            <br />
+        </div>
+        <!-- .wedding-info-title .row -->
+        <div class="container">
+            <div class="row">
+                <!-- Tab Panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" id="pre-wed" class="tab-pane active fade in tab-content-each">
+                        <ul class="pre-wed-list">
+                            <li ng-repeat="image in images">
+                                <a ng-href="{{image.url}}" data-lightbox="pre-wed"><img class="image-shadow" ng-src="{{image.image}}"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" id="instafeed" class="tab-pane fade tab-content-each"></div>
+                </div>
+                <!-- .tab-content -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </section>
+    <!-- .instagram-feed -->
+    <!-- hiding RSVP section for now
         <section id="rsvp" class="rsvp">
             <div class="title-row" align="middle">
                 <br />RSVP
@@ -241,52 +219,40 @@
             </div>
         </section>
         -->
-        
-           <!-- faq  -->
-         <section id="details" class="details">
-            <div class="title-row" align="middle">
-                DETAILS 
-                  <div class="container">
-                <div class="col-xs-6 ceremony" align="left">
-                    <p><b>Is parking provided?</b><br />There is a large parking lot behind the main sanctuary at White's Chapel. Valet and self parking are both available at Las Colinas Country Club.</p>
-                    <p><b>Is there a dress code?</b><br />Yes, please wear formal attire. </p>
-                </div>
-                <!-- .col-xs-6 .ceremony -->
-                <div class="col-xs-6 ceremony" align="left">
-                    <p><b>Where is Grace Chapel?</b><br />White's Chapel is a large church with three separate chapels. Below this section is a map of the church grounds in case you need help finding Grace Chapel.</p>
-                    <p><b>Other questions?</b><br />Feel free to e-mail us at <a href="mailto:aliandzedd@gmail.com">aliandzedd@gmail.com</a>.</p>
-                </div>
-                       <div class="container">
-                <div class="row">
-                    <!-- Tab Panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" id="map" class="tab-pane active fade in tab-content-each">
-                                    <a ng-href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/chapel_map.jpg?alt=media&token=864e99f3-5628-470d-817e-10fcac5cd4cf" data-lightbox="map2"><img ng-src="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/chapel_map.jpg?alt=media&token=864e99f3-5628-470d-817e-10fcac5cd4cf" width="75%" height="75%"/></a>
-                        </div>
-                    </div>
-                    <!-- .tab-content -->
-                </div>
-                <!-- .row -->
-            </div>
-                <!-- .col-xs-6 .ceremony -->
-            </div>
-            </div>
-            <!-- .wedding-info-title .row -->
-        </section>
-        <!-- faq  -->
-        
+    <!-- faq  -->
+    <section id="details" class="details">
+        <div class="title-row" align="middle">
+            DETAILS
         </div>
-        <!-- .content-container -->
-        <footer>
-            <div class="container">
-                <img class="display center" src="res/az.png" style="width:15%; height:15%">
+        <div class="container">
+            <div class="col-xs-6 ceremony" align="left">
+                <b>Is parking provided?</b>
+                <p>There is a large parking lot behind the main sanctuary at White's Chapel. Valet and self parking are both available at Las Colinas Country Club.</p>
+                <b>Is there a dress code?</b>
+                <p>Yes, please wear formal attire. </p>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/app.js"></script>
+            <!-- .col-xs-6 .ceremony -->
+            <div class="col-xs-6 ceremony" align="left">
+                <b>Where is Grace Chapel?</b>
+                <p>White's Chapel is a large church with three separate chapels. <b><a ng-href="https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/chapel_map.jpg?alt=media&token=864e99f3-5628-470d-817e-10fcac5cd4cf" data-lightbox="map2">Here is a map</a></b> of the church grounds in case you need help finding Grace Chapel.</p>
+                <b>Other questions?</b>
+                <p>Feel free to e-mail us at <a href="mailto:aliandzedd@gmail.com">aliandzedd@gmail.com</a>.</p>
+            </div>
+        </div>
+        <!-- .wedding-info-title .row -->
+    </section>
+    <!-- faq  -->
+    </div>
+    <!-- .content-container -->
+    <footer>
+        <div class="container">
+            <img class="display center" src="res/az.png" style="width:15%; height:15%">
+        </div>
+    </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
