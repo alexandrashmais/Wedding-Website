@@ -8167,31 +8167,18 @@ html {
 }
 
 /* Start @font-face */
-@font-face {
-  font-family: "Didot";
-  src: url('../fonts/Didot/Didot.eot?1439448052');
-  src: url('../fonts/Didot/Didot.eot?&1439448052#iefix') format('embedded-opentype'), url('../fonts/Didot/Didot.woff?1439448052') format('woff'), url('../fonts/Didot/Didot.ttf?1439448052') format('truetype'), url('../fonts/Didot/DIdot.svg?1439448052') format('svg');
-  font-weight: 500;
+
+ @font-face {
+    font-family:"Proxima-Nova";
+    src:url('../res/Proxima-Nova.otf');
+    font-weight: 700;
 }
-@font-face {
-  font-family: "Gotham";
-  src: url('../fonts/Gotham/Gotham-Book.eot?1439448704');
-  src: url('../fonts/Gotham/Gotham-Book.eot?&1439448704#iefix') format('embedded-opentype'), url('../fonts/Gotham/Gotham-Book.woff?1439448706') format('woff'), url('../fonts/Gotham/Gotham-Book.ttf?1439448704') format('truetype'), url('../fonts/Gotham/Gotham-Book.svg?1439448706') format('svg');
-  src: url('../fonts/Gotham/Gotham-Book.eot?&1439448704#iefix') format('embedded-opentype'), url('../fonts/Gotham/Gotham-Book.woff?1439448706') format('woff'), url('../fonts/Gotham/Gotham-Book.ttf?1439448704') format('truetype'), url('../fonts/Gotham/Gotham-Book.svg?1439448706') format('svg');
-  font-weight: 500;
-}
+
 
  @font-face {
     font-family:"Erato Light";
     src:url('../res/Hoftype - Erato-Light.otf');
     font-weight: 700;
-}
-
-@font-face {
-  font-family: "Gotham";
-  src: url('../fonts/Gotham/Gotham-Bold.eot?1439448724');
-  src: url('../fonts/Gotham/Gotham-Bold.eot?&1439448724#iefix') format('embedded-opentype'), url('../fonts/Gotham/Gotham-Bold.woff?1439448724') format('woff'), url('../fonts/Gotham/Gotham-Bold.ttf?1439448724') format('truetype'), url('../fonts/Gotham/Gotham-Bold.svg?1439448724') format('svg');
-  font-weight: 700;
 }
 
  @font-face {
