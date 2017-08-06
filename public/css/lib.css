@@ -8203,7 +8203,14 @@ html {
  @font-face {
     font-family: "Playfair";
     src:url('../res/PlayfairDisplay-Regular.otf');
+
+}
+
+ @font-face {
+    font-family: "Playfair";
+    src:url('../res/PlayfairDisplay-Black.otf');
     font-weight: 700;
+     font-weight: bold;
 }
 
 
