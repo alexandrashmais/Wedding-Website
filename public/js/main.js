@@ -5,6 +5,16 @@
         lightBox();
     });
 
+
+    $(window).resize(function () {
+        respond();
+    });
+
+    $(document).load(function () {
+
+    });
+
+
     function lightBox() {
         lightbox.option({
             alwaysShowNavOnTouchDevices true,
