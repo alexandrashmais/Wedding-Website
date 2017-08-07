@@ -91,13 +91,11 @@ app.controller('mainCtrl', function($scope) {
             url:"https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F8.JPG?alt=media&token=99298f93-edfa-4694-97a8-87026a4a4bf2"
         }
     ];
-    
 
-
-var text =`
-Designed with Love by:
-Ali and Zedd
-`;
-console.log(text);
+    var text =`
+    Designed with Love by:
+    Ali and Zedd
+    `;
+    console.log(text);
 
 });
