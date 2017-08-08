@@ -12,9 +12,7 @@
     <!-- / BOOTSTRAP -->
 
     <!-- LIGHT BOX -->
-    <link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
-    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.min.css">
     <!-- / LIGHT BOX -->
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -205,7 +203,7 @@
                     <div role="tabpanel" id="pre-wed" class="tab-pane active fade in tab-content-each">
                         <ul class="pre-wed-list">
                             <li ng-repeat="image in images">
-                                <a class="fancybox-thumb" rel="fancybox-thumb" ng-href="{{image.url}}">
+                                <a class="fancybox-thumb" data-fancybox="group" ng-href="{{image.url}}">
                                     <img class="image-shadow" ng-src="{{image.image}}" />
                                 </a>
                             </li>
@@ -267,10 +265,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
 
     <!-- LIGHT BOX -->
-    <script src="fancybox/jquery.fancybox.pack.js?v=2.1.7"></script>
-    <script src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-    <script src="fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script src="fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script src="fancybox/jquery.fancybox.min.js"></script>
     <!-- / LIGHT BOX -->
 
     <script src="js/app.js"></script>
