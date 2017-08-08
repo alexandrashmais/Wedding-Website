@@ -1,8 +1,11 @@
 $(document).ready(function() {
     $(".fancybox-thumb").fancybox({
-        prevEffect: 'none',
-        nextEffect: 'none',
+        prevEffect: 'fade',
+        nextEffect: 'fade',
         helpers: {
+            overlay : {
+                locked : false
+            },
             thumbs: {
                 width: 50,
                 height: 50
