@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("[data-fancybox]").fancybox({
-        transitionEffect : "zoom-in-out",
+        transitionEffect : "fade",
         loop : true,
         toolbar : true,
         buttons : [
