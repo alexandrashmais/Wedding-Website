@@ -1,28 +1,12 @@
-(function ($) {
-
-
-    $(document).ready(function () {
-        lightBox();
+$(document).ready(function() {
+    $(".fancybox-thumb").fancybox({
+        prevEffect: 'none',
+        nextEffect: 'none',
+        helpers: {
+            thumbs: {
+                width: 50,
+                height: 50
+            }
+        }
     });
-
-
-    $(window).resize(function () {
-        respond();
-    });
-
-    $(document).load(function () {
-
-    });
-
-
-    function lightBox() {
-        lightbox.option({
-            alwaysShowNavOnTouchDevices true,
-            positionFromTop 100,
-            showImageNumberLabel false
-        });
-    }
-
-
-
-}(jQuery));
+});
