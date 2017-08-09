@@ -181,25 +181,52 @@ h2::first-letter {
     background-image: url("https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F15.jpg?alt=media&token=1455cbfd-2b5d-4f1c-8329-f0e3549b2af2");
 
     /* Full height */
-    height: 100%;
-
+    height: 50%;
     /* Center and scale the image nicely */
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .textimage {
-    position: absolute;
-    top: 50%;
-    right: 2%;
-    width: 50%;
-    font-family: "Steelworks";
-    color: white;
-    font-size: 90px;
-    text-align: center;
-    white-space: nowrap;
+        position: absolute;
+        top: 35%;
+        right: 2%;
+        width: 50%;
+        font-family: "Steelworks";
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+@media (min-width: 700px) {
+    .coverphoto {
+        /* The image used */
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F15.jpg?alt=media&token=1455cbfd-2b5d-4f1c-8329-f0e3549b2af2");
+
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .textimage {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        width: 50%;
+        font-family: "Steelworks";
+        color: white;
+        font-size: 6em;
+        text-align: center;
+        white-space: nowrap;
+    }
 }
+
+
 
 
 
