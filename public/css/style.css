@@ -227,6 +227,32 @@ h2::first-letter {
 }
 
 
+@media (min-width: 700px) and (orientation: landscape) {
+    .coverphoto {
+        /* The image used */
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F15.jpg?alt=media&token=1455cbfd-2b5d-4f1c-8329-f0e3549b2af2");
+
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .textimage {
+        position: absolute;
+        top: 50%;
+        right: 1.5%;
+        width: 50%;
+        font-family: "Steelworks";
+        color: white;
+        font-size: 2.5em;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
 
 
 
