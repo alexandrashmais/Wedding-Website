@@ -198,13 +198,14 @@ h2::first-letter {
     display: block;
     width: 100%;
     height: auto;
+    background-size: cover
 }
 
 @media (min-width: 700px) and (orientation: portrait) {
     .hotel-class {}
 }
 
-@media (max-width: 650px) and (min-width: 400px) {
+@media (max-width: 650px) and (min-width: 450px) {
     .hotel-class {
         width: 29%;
         float: left;
