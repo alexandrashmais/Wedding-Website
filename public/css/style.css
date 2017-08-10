@@ -337,6 +337,12 @@ h2::first-letter {
     height: 100vh;
 }
 
+@media (max-width: 700px) and (orientation: landscape) {
+    .registry {
+        height: 115vh;
+    }
+}
+
 .details {
     height: 100vh;
 }
