@@ -43,11 +43,11 @@ body {
     animation-fill-mode: forwards;
 }
 
-li:nth-child(2)>.image2 {
+li:nth-child(2) > .image2 {
     animation-delay: 1s;
 }
 
-li:nth-child(3)>.image2 {
+li:nth-child(3) > .image2 {
     animation-delay: 2s;
 }
 
@@ -232,7 +232,6 @@ h2::first-letter {
 
 /*end hover over hotel feature classes*/
 
-
 /* Text for cover photo */
 
 .coverphoto {
@@ -349,6 +348,10 @@ h2::first-letter {
 }
 
 .gallery {
+    height: 100vh;
+}
+
+.RSVP {
     height: 100vh;
 }
 
