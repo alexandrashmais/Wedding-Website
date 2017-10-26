@@ -261,10 +261,10 @@
             <br/> RSVP
         </div>
         <div class="container" style="margin-top: 25px" align="center">
-            <b>We would greatly appreciate it if you could respond before December 10th.</b>
+            <b>We hope you can join us! Please RSVP by December 10th</b>
         </div>
         <div class="container" style="margin-top: 25px" align="center">
-            <button type="button" class="btn btn-primary btn-lg active" style="background-color: #131517; font-family: Erato Light;" data-toggle="modal" data-target="#rsvpModal">RSVP</button>
+            <button type="button" class="az-button btn btn-primary btn-lg active" data-toggle="modal" data-target="#rsvpModal">RSVP</button>
         </div>
         <!-- .wedding-info-title .row -->
     </section>
@@ -281,22 +281,41 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">RSVP</h4>
+                    <h4 class="modal-title erato-font">Are you coming ?</h4>
                 </div>
                 <div class="modal-body">
-                    <h3>Are you coming ?</h3>
-                    <label class="radio-inline">
-                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Will be there
+                    <label class="radio-inline erato-font">
+                        <input type="radio" ng-model="attendanceCheck" value="true"> Will be there
                     </label>
-                    <label class="radio-inline">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Sorry I can't make it
+                    <label class="radio-inline erato-font">
+                      <input type="radio" ng-model="attendanceCheck" value=""> Sorry I can't make it
                     </label>
                     <h3>Your Details</h3>
+                    <input class="form-control input-lg" type="text" placeholder="Your name">
+                    <div ng-show="attendanceCheck">
+                        <br>
+                        <label class="erato-font">
+                            <input type="checkbox"  ng-model="guestCheck" value="false">
+                            Guests?
+                        </label>
+                        <div ng-show="guestCheck">
+                            <h3>Guest names</h3>
+                            <textarea class="form-control input-lg" placeholder="Guests names" rows="3"></textarea>
+                            <br>
+                            <label class="erato-font">
+                            <input type="checkbox" ng-model="allergiesCheck" value="false">
+                            Food Allergies?
+                        </label>
+                            <input ng-show="allergiesCheck" class="form-control input-lg" type="text" placeholder="Allergies, please separate with comma...">
+                        </div>
+                    </div>
+
                     <h3>Leave us a message</h3>
+                    <textarea class="form-control input-lg" placeholder="Promise we'll read it!" rows="3"></textarea>
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="az-button btn btn-primary erato-font">Do it</button>
                 </div>
             </div>
 

@@ -79,7 +79,7 @@ app.controller('mainCtrl', function ($scope) {
             url: "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F6.jpg?alt=media&token=87927f23-3a4f-4962-a489-a3c802134f00"
         },
         {
-            image: "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/cropped%2F11.jpg?alt=media&token=591819fc-54b2-4bb0-a48f-2db10670ff43",
+            image: "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9{d.appspot.com/o/cropped%2F11.jpg?alt=media&token=591819fc-54b2-4bb0-a48f-2db10670ff43",
             url: "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F11.jpg?alt=media&token=274179b3-e966-40df-a416-d990155d8c11"
         },
         {
@@ -91,6 +91,21 @@ app.controller('mainCtrl', function ($scope) {
             url: "https://firebasestorage.googleapis.com/v0/b/wedding-website-d3f9d.appspot.com/o/images%2F8.JPG?alt=media&token=99298f93-edfa-4694-97a8-87026a4a4bf2"
         }
     ];
+
+    $scope.updateRSVPSelection = function (val) {
+        if (val == "true") {
+            $scope.rsvpComing = true;
+            $scope.rsvpBtnMessage = "Accept With Plesure";
+        } else {
+            $scope.rsvpComing = false;
+            $scope.rsvpBtnMessage = "Decline With Regret";
+        }
+        return $scope.rsvpComing;
+    };
+    $scope.rsvpComing = false;
+
+
+
 
     var text = `
     Designed with Love by:
