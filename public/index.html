@@ -34,7 +34,7 @@
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
+            m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -281,32 +281,51 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title erato-font">Are you coming ?</h4>
+                    <h4 class="modal-title erato-font" style="font-size: 24px">Are you coming ?</h4>
                 </div>
                 <div class="modal-body">
-                    <label class="radio-inline erato-font">
-                        <input type="radio" ng-model="attendanceCheck" value="true"> Will be there
-                    </label>
-                    <label class="radio-inline erato-font">
-                      <input type="radio" ng-model="attendanceCheck" value=""> Sorry I can't make it
-                    </label>
+
                     <h3>Your Details</h3>
+                    <label class="radio-inline erato-font rsvp-text">
+                        <input type="radio" ng-model="attendance_check" value="true"> Will be there
+                    </label>
+                    <label class="radio-inline erato-font rsvp-text">
+                      <input type="radio" ng-model="attendance_check" value="false"> Sorry I can't make it
+                    </label>
                     <input class="form-control input-lg" type="text" placeholder="Your name">
-                    <div ng-show="attendanceCheck">
+                    <div ng-show="attendance_check == 'true'">
                         <br>
-                        <label class="erato-font">
-                            <input type="checkbox"  ng-model="guestCheck" value="false">
-                            Guests?
-                        </label>
-                        <div ng-show="guestCheck">
-                            <h3>Guest names</h3>
-                            <textarea class="form-control input-lg" placeholder="Guests names" rows="3"></textarea>
-                            <br>
-                            <label class="erato-font">
+                        <label class="erato-font rsvp-text">
                             <input type="checkbox" ng-model="allergiesCheck" value="false">
                             Food Allergies?
                         </label>
+                        <label class="erato-font rsvp-text">
+                            <input type="checkbox"  ng-model="guestCheck" value="false">
+                            Guests?
+                        </label>
+                        
                             <input ng-show="allergiesCheck" class="form-control input-lg" type="text" placeholder="Allergies, please separate with comma...">
+                        <div class="form-group" ng-show="guestCheck">
+                            <h3>How many Guests:</h3>
+                            <select ng-model="guest_count" class="form-control" >
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <h3 ng-show="guest_count == 1">Guest Info:</h3>
+                            <h3 ng-show="guest_count > 1">Guests Info:</h3>
+                            <div class="row" ng-repeat="i in get_guest_count(guest_count) track by $index" style="margin-bottom: 5px;">
+                                <div class="col-xs-5">
+                                    <input class="form-control input-lg" type="text" placeholder="Guest name">
+                                </div>
+                                <div class="col-xs-7">
+                                    <input class="form-control input-lg" type="text" placeholder="Allergies if any">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -315,7 +334,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="az-button btn btn-primary erato-font">Do it</button>
+                    <button type="button" ng-show="attendance_check == 'true'" class="az-button btn btn-primary erato-font">Accept with Honor</button>
+                    <button type="button" ng-show="attendance_check == 'false'" class="az-button btn btn-primary erato-font">Decline With Regret</button>
                 </div>
             </div>
 

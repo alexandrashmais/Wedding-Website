@@ -92,20 +92,14 @@ app.controller('mainCtrl', function ($scope) {
         }
     ];
 
-    $scope.updateRSVPSelection = function (val) {
-        if (val == "true") {
-            $scope.rsvpComing = true;
-            $scope.rsvpBtnMessage = "Accept With Plesure";
-        } else {
-            $scope.rsvpComing = false;
-            $scope.rsvpBtnMessage = "Decline With Regret";
-        }
-        return $scope.rsvpComing;
-    };
-    $scope.rsvpComing = false;
 
-
-
+    $scope.guest_count = 0;
+    $scope.get_guest_count = function(num) {
+        var x= new Array();
+        for(var i=0;i<num;i++){ x.push(i+1)}; 
+        console.log(x);
+        return x;
+    }
 
     var text = `
     Designed with Love by:
