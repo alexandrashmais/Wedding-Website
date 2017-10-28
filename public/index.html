@@ -34,7 +34,7 @@
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
+                m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -261,7 +261,7 @@
             <br/> RSVP
         </div>
         <div class="container" style="margin-top: 25px" align="center">
-            <b>We hope you can join us! Please RSVP by December 10th</b>
+            <b>We hope you can join us! Please RSVP by December 10th.</b>
         </div>
         <div class="container" style="margin-top: 25px" align="center">
             <button type="button" class="az-button btn btn-primary btn-lg active" data-toggle="modal" data-target="#rsvpModal">RSVP</button>
@@ -281,16 +281,16 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title erato-font" style="font-size: 24px">Are you coming ?</h4>
+                    <h4 class="modal-title erato-font" style="font-size: 24px">Are you coming?</h4>
                 </div>
                 <div class="modal-body">
 
                     <h3>Your Details</h3>
                     <label class="radio-inline erato-font rsvp-text">
-                        <input type="radio" ng-model="attendance_check" value="true"> Will be there
+                        <input type="radio" ng-model="attendance_check" value="true">I will be there
                     </label>
                     <label class="radio-inline erato-font rsvp-text">
-                      <input type="radio" ng-model="attendance_check" value="false"> Sorry I can't make it
+                      <input type="radio" ng-model="attendance_check" value="false"> Sorry, can't make it
                     </label>
                     <input class="form-control input-lg" type="text" placeholder="Your name">
                     <div ng-show="attendance_check == 'true'">
@@ -303,11 +303,11 @@
                             <input type="checkbox"  ng-model="guestCheck" value="false">
                             Guests?
                         </label>
-                        
-                            <input ng-show="allergiesCheck" class="form-control input-lg" type="text" placeholder="Allergies, please separate with comma...">
+
+                        <input ng-show="allergiesCheck" class="form-control input-lg" type="text" placeholder="Allergies, please separate with comma...">
                         <div class="form-group" ng-show="guestCheck">
                             <h3>How many Guests:</h3>
-                            <select ng-model="guest_count" class="form-control" >
+                            <select ng-model="guest_count" class="form-control">
                                 <option value="0" selected>0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -323,7 +323,7 @@
                                     <input class="form-control input-lg" type="text" placeholder="Guest name">
                                 </div>
                                 <div class="col-xs-7">
-                                    <input class="form-control input-lg" type="text" placeholder="Allergies if any">
+                                    <input class="form-control input-lg" type="text" placeholder="Allergies, if any">
                                 </div>
                             </div>
                         </div>
@@ -334,7 +334,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" ng-show="attendance_check == 'true'" class="az-button btn btn-primary erato-font">Accept with Honor</button>
+                    <button type="button" ng-show="attendance_check == 'true'" class="az-button btn btn-primary erato-font">Accept with Pleasure</button>
                     <button type="button" ng-show="attendance_check == 'false'" class="az-button btn btn-primary erato-font">Decline With Regret</button>
                 </div>
             </div>
