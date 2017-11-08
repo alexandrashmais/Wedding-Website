@@ -314,7 +314,7 @@
                                 Guests?
                             </label>
 
-                            <input ng-if="allergiesCheck" class="form-control input-lg" type="text" ng-model="userModel.allergies" ng-required="true" placeholder="Allergies, if any">
+                            <input ng-if="allergiesCheck" class="form-control input-lg" type="text" ng-model="userModel.allergies" ng-required="true" placeholder="Allergies, please separate with comma...">
                             <div class="form-group" ng-if="guestCheck">
                                 <h3>How many Guests:</h3>
                                 <select ng-model="userModel.guests_count" ng-change="userModel.guests=add_guests(userModel.guests_count)" class="form-control">
