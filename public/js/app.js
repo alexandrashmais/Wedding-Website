@@ -1,12 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const auth = firebase.auth();
     var firebase_user_uid;
+    var count = 0;
     auth.onAuthStateChanged(firebaseUser => {
-        if (firebaseUser){
-            firebase_user_uid = firebaseUser.uid;
-            console.log(firebase_user_uid);
-        }else {
+        if (firebaseUser) {
+            if (count == 0) {
+                auth.signOut();
+            } else {
+                firebase_user_uid = firebaseUser.uid;
+            }
+        } else {
             // console.log("logging in");
+            count++;
             auth.signInAnonymously();
         }
     });
@@ -93,29 +98,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
         $scope.rsvp_submitted = false;
         $scope.userModel = {
-            coming : true,
-            name : undefined,
-            allergies : undefined,
-            guests_count : 0,
-            guests : [],
-            message : undefined
+            coming: true,
+            name: undefined,
+            allergies: undefined,
+            guests_count: 0,
+            guests: [],
+            message: undefined
         };
 
-        $scope.deleteGuests = function(){
+        $scope.deleteGuests = function () {
             $scope.userModel.guests = [];
             $scope.userModel.guests_count = 0;
         };
 
-        $scope.deleteAllergies = function(){
+        $scope.deleteAllergies = function () {
             $scope.userModel.allergies = undefined;
         };
 
-        $scope.add_guests = function(num) {
+        $scope.add_guests = function (num) {
             var guests = []
-            for(var i=0;i<num;i++){ 
+            for (var i = 0; i < num; i++) {
                 guests.push({
-                    name : undefined,
-                    allergies : undefined
+                    name: undefined,
+                    allergies: undefined
                 });
             };
             return guests;
@@ -124,9 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const text = "Designed with Love by:\nAli and Zedd";
         console.log(text);
 
-
-        $scope.submit_rsvp = function(){
-            $scope.hideModal= "modal";
+        $scope.submit_rsvp = function () {
+            $scope.hideModal = "modal";
             console.log(angular.toJson($scope.userModel));
             //we do that to strip from extra hashkey angular adds
             var entry = angular.fromJson(angular.toJson($scope.userModel));
@@ -135,17 +139,10 @@ document.addEventListener('DOMContentLoaded', function() {
             entry.timeUpdated = utcDate;
             rsvpObject.child(firebase_user_uid).set(entry);
 
-
             // show snackbar message
             $scope.rsvp_submitted = true;
         };
 
-        // rsvpObject.on('value', snap => console.log(snap.val()));
-
-
     });
 
 });
-
-
-
