@@ -303,7 +303,7 @@
                         <h3>Your Details</h3>
 
                         <input class="form-control input-lg" type="text" ng-model="userModel.name" ng-required="true" placeholder="Your name">
-                        <div ng-show="userModel.coming == 'true'">
+                        <div ng-if="userModel.coming">
                             <br>
                             <label class="erato-font rsvp-text">
                                 <input type="checkbox" ng-model="allergiesCheck" ng-change="deleteAllergies()" value="false">
