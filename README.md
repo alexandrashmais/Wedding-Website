@@ -1,6 +1,6 @@
 # Ali & Zedd
 
-Ali and Zedds really nice wedding website, made with absolute love <3
+Ali and Zedds really nice wedding website
 
 # Environment Setup
 - install ```node js```
