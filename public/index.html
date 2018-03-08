@@ -6,7 +6,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ali & Zedd's Wedding</title>
+    <title>Ali & Zedd's Wedding Website</title>
     <!-- BOOTSTRAP -->
     <link href="css/lib.css" rel="stylesheet" type="text/css" />
     <!-- / BOOTSTRAP -->
@@ -270,7 +270,7 @@
         </div>
         <div ng-if="rsvp_submitted">
             <div class="container" style="margin-top: 25px" align="center">
-                <b>Thank you! your submission was saved successfully!</b>
+                <b>Thank you! Your submission was saved successfully.</b>
             </div>
             <div class="container" style="margin-top: 25px" align="center">
                 <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#rsvpModal">Edit RSVP</button>
@@ -295,7 +295,7 @@
                         <input type="radio" name="attendance" ng-model="userModel.coming" ng-value="true" ng-checked="userModel.coming" ng-required="true">I will be there
                     </label>
                         <label class="radio-inline erato-font rsvp-text">
-                        <input type="radio" name="attendance" ng-model="userModel.coming" ng-value="false" ng-checked="!userModel.coming" ng-required="true"> Sorry, can't make it
+                        <input type="radio" name="attendance" ng-model="userModel.coming" ng-value="false" ng-checked="!userModel.coming" ng-required="true"> Sorry, I can't make it
                     </label>
                     </div>
                     <div class="modal-body">
@@ -314,11 +314,10 @@
                                 Guests?
                             </label>
 
-                            <input ng-if="allergiesCheck" class="form-control input-lg" type="text" ng-model="userModel.allergies" ng-required="true" placeholder="Allergies, please separate with comma...">
+                            <input ng-if="allergiesCheck" class="form-control input-lg" type="text" ng-model="userModel.allergies" ng-required="true" placeholder="Please list food allergies or dietary restrictions">
                             <div class="form-group" ng-if="guestCheck">
                                 <h3>How many Guests:</h3>
                                 <select ng-model="userModel.guests_count" ng-change="userModel.guests=add_guests(userModel.guests_count)" class="form-control">
-                                    <option value="0" selected>0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -333,7 +332,7 @@
                                         <input class="form-control input-lg" type="text" ng-model="guest.name" ng-required="true" placeholder="Guest name">
                                     </div>
                                     <div class="col-xs-7">
-                                        <input class="form-control input-lg" type="text" ng-model="guest.allergies" placeholder="Allergies, if any">
+                                        <input class="form-control input-lg" type="text" ng-model="guest.allergies" placeholder="Food allergies, if any">
                                     </div>
                                 </div>
                             </div>
