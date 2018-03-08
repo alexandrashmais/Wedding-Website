@@ -1,6 +1,6 @@
-# Ali & Zedd
+# Wedding Website
 
-Ali and Zedds really nice wedding website
+A one-page wedding website with fancybox photo gallery, mobile functionality and RSVP. 
 
 # Environment Setup
 - install ```node js```
